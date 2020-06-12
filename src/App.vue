@@ -4,7 +4,7 @@
     alt="Vue Bot UI",
     src="./assets/logo.png"
   )
-  VueBotUI(
+  VueChatBot(
     :options="botOptions",
     :messages="messageData",
     :bot-typing="botTyping",
@@ -16,13 +16,13 @@
 </template>
 <script>
 import BotIcon from './assets/icons/bot.png'
-import { VueBotUI } from './vue-bot-ui'
+import { VueChatBot } from './vue-chat-bot'
 import { messageService } from './helpers/message'
 
 export default {
   components: {
     BotIcon,
-    VueBotUI
+    VueChatBot
   },
 
   data () {

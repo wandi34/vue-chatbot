@@ -1,8 +1,8 @@
-import VueBotUI from './components/BotUI.vue'
+import VueChatBot from './components/BotUI.vue'
 
 const Plugin = {
   install (Vue, options) {
-    Vue.component('VueBotUI', VueBotUI)
+    Vue.component('VueChatBot', VueChatBot)
 
     if (options) {
       // console.log('options', options)
@@ -11,4 +11,4 @@ const Plugin = {
 }
 
 export default Plugin
-export { VueBotUI }
+export { VueChatBot }

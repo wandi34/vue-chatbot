@@ -123,7 +123,7 @@ export default {
     }
   },
 
-  created () {
+  mounted () {
     if (this.isOpen) {
       this.botToggle()
     }

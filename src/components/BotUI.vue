@@ -142,7 +142,7 @@ export default {
       if (this.botActive) {
         this.$emit('init')
       } else {
-        EventBus.$off('select-button-option')
+        // EventBus.$off('select-button-option')
         this.$emit('destroy')
       }
     },

@@ -4,8 +4,8 @@ const Plugin = {
   install (Vue, options) {
     Vue.component('VueChatBot', VueChatBot)
 
-    if (options) {
-      // console.log('options', options)
+    if (typeof window !== 'undefined' && window.Vue) {
+      window.Vue.use(Plugin)
     }
   }
 }

@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Chatbot UI using Vue.js 2",
   "author": {
-    "name": "SonNH",
-    "email": "sonnh@ownego.com"
+    "name": "Chea Bonnak"
   },
   "main": "dist/vue-bot-ui.common.js",
   "files": [

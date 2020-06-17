@@ -123,11 +123,11 @@ export default {
     }
   },
 
-  mounted () {
-    if (this.isOpen) {
-      this.botToggle()
-    }
+  created () {
+    this.initBot()
+  },
 
+  mounted () {
     EventBus.$on('select-button-option', this.selectOption)
   },
 
@@ -136,11 +136,19 @@ export default {
   },
 
   methods: {
+    initBot () {
+      if (this.isOpen) {
+        this.botActive = true
+      }
+
+      this.$emit('init')
+    },
+
     botToggle () {
       this.botActive = !this.botActive
 
       if (this.botActive) {
-        this.$emit('init')
+        this.$emit('open')
       } else {
         // EventBus.$off('select-button-option')
         this.$emit('destroy')

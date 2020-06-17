@@ -102,7 +102,8 @@ Take a look my `App.vue` file if you need an example.
 
 | Name            | Params          | Description |
 | ---             | ---             | ---         |
-| `init`          |                 | Fire everytime the board is opened |
+| `init`          |                 | Fire the first time the board is opened |
+| `open`          |                 | Fire everytime the board is opened |
 | `msg-send`      | value (Object)  | Fire when user hit Send or select an option |
 | `destroy `      |                 | Fire when board is closed |
 

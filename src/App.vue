@@ -80,8 +80,6 @@ export default {
       // Create new message from fake data
       messageService.createMessage()
         .then((response) => {
-          console.log(response)
-
           const replyMessage = {
             agent: 'bot',
             ...response

@@ -3,6 +3,7 @@
 }
 
 .qkb-bubble-btn {
+  position: relative;
   display: block;
   padding: 0;
   outline: 0;
@@ -17,6 +18,10 @@
 
   &:hover {
     opacity: .85;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-right: 1rem;
   }
 }
 

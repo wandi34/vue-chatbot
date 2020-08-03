@@ -14,8 +14,8 @@
 </template>
 
 <script>
-import MessageBubble from '../MessageBubble/Main'
-import MessageTyping from '../MessageBubble/Typing'
+import MessageBubble from "../MessageBubble/Main";
+import MessageTyping from "../MessageBubble/Typing";
 
 export default {
   components: {
@@ -35,25 +35,25 @@ export default {
     }
   },
 
-  mounted () {
-    this.updateScroll()
+  mounted() {
+    this.updateScroll();
   },
 
   watch: {
-    mainData: function (newVal) {
+    mainData: function(newVal) {
       this.$nextTick(() => {
-        this.updateScroll()
-      })
+        this.updateScroll();
+      });
     }
   },
 
   methods: {
-    updateScroll () {
-      const contentElm = this.$refs.boardContent
-      const offsetHeight = this.$refs.boardBubbles.offsetHeight
+    updateScroll() {
+      const contentElm = this.$refs.boardContent;
+      const offsetHeight = this.$refs.boardBubbles.offsetHeight;
 
-      contentElm.scrollTop = offsetHeight
+      contentElm.scrollTop = offsetHeight;
     }
   }
-}
+};
 </script>

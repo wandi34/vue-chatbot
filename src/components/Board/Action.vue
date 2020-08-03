@@ -23,7 +23,7 @@
           IconSend.qkb-action-icon.qkb-action-icon--send
 </template>
 <script>
-import IconSend from '../../assets/icons/send.svg'
+import IconSend from "../../assets/icons/send.svg";
 
 export default {
   components: {
@@ -45,41 +45,41 @@ export default {
     }
   },
 
-  data () {
+  data() {
     return {
       messageText: null
-    }
+    };
   },
 
   computed: {
-    actionClass () {
-      const actionClasses = []
+    actionClass() {
+      const actionClasses = [];
 
       if (this.inputDisable) {
-        actionClasses.push('qkb-board-action--disabled')
+        actionClasses.push("qkb-board-action--disabled");
       }
 
       if (this.messageText) {
-        actionClasses.push('qkb-board-aciton--typing')
+        actionClasses.push("qkb-board-aciton--typing");
       }
 
       // TODO: sending
 
-      return actionClasses
+      return actionClasses;
     }
   },
 
-  mounted () {
-    this.$refs.qkbMessageInput.focus()
+  mounted() {
+    this.$refs.qkbMessageInput.focus();
   },
 
   methods: {
-    sendMessage () {
+    sendMessage() {
       if (this.messageText) {
-        this.$emit('msg-send', { text: this.messageText })
-        this.messageText = null
+        this.$emit("msg-send", { text: this.messageText });
+        this.messageText = null;
       }
     }
   }
-}
+};
 </script>

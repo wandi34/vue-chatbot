@@ -3,11 +3,11 @@
 </template>
 <script>
 export default {
-  props: ['options'],
+  props: ["options"],
   computed: {
-    style () {
+    style() {
       if (!this.options) {
-        return ''
+        return "";
       }
 
       const {
@@ -22,7 +22,7 @@ export default {
         msgBubbleColorBot,
         msgBubbleBgUser,
         msgBubbleColorUser
-      } = this.options
+      } = this.options;
 
       const styles = `
 <style type="text/css" id="qkb-bot-style">
@@ -47,7 +47,8 @@ export default {
 .qkb-board-content {
   background-color: ${boardContentBg};
 }
-${botAvatarImg
+${
+  botAvatarImg
     ? `.qkb-msg-avatar {
       width: ${botAvatarSize}px;
       height: ${botAvatarSize}px;
@@ -55,7 +56,7 @@ ${botAvatarImg
     .qkb-msg-avatar__img {
       background-image: url(${botAvatarImg});
     }`
-    : ''
+    : ""
 }
 .qkb-msg-bubble--bot .qkb-msg-bubble-component__text {
   color: ${msgBubbleColorBot};
@@ -85,9 +86,9 @@ ${botAvatarImg
   background-color: ${inputDisableBg};
 }
 </style>
-      `
-      return styles
+      `;
+      return styles;
     }
   }
-}
+};
 </script>

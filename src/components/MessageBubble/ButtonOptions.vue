@@ -21,7 +21,7 @@
         span {{ item.text }}
 </template>
 <script>
-import EventBus from '../../helpers/event-bus'
+import EventBus from "../../helpers/event-bus";
 
 export default {
   props: {
@@ -30,17 +30,17 @@ export default {
     }
   },
 
-  data () {
+  data() {
     return {
       selectedItem: null
-    }
+    };
   },
 
   methods: {
-    selectOption (value) {
-      this.selectedItem = value
-      EventBus.$emit('select-button-option', value)
+    selectOption(value) {
+      this.selectedItem = value;
+      EventBus.$emit("select-button-option", value);
     }
   }
-}
+};
 </script>

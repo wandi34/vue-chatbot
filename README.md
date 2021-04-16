@@ -1,6 +1,8 @@
 
 # Vue Bot UI
 
+This is a fork of Chea Bonnaks vue-chat-ui. I have had problems to use the original project in fullscreen. So I forked the original one and customized it.
+
 #### For the one who is finding a customizable chatbot UI.
 
 I build for my private project, but I tried to bring as many options as I think someone need it, so feel free to use it.

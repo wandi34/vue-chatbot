@@ -1,10 +1,13 @@
 {
-  "name": "awi-chat-bot",
-  "version": "1.0.11",
+  "name": "mobile-chat-bot",
+  "version": "0.0.2",
   "description": "Chatbot UI using Vue.js 2",
   "author": {
     "name": "Chea Bonnak"
   },
+  "contributors": [
+    "Andreas Winter"
+  ],
   "main": "dist/vue-chat-bot.common.js",
   "files": [
     "dist/*",
